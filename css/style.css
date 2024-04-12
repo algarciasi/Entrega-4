@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+body {
+    /*background-image: url(../img/belimitless2.jpg);*/
+    background-color: #003E15;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #019B45;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+header .logo:hover {
+    color: #019B45;
+    background: #fff;
+    transition: 1s;
+}
+
+header .logo2 {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #003E15;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+header .logo2:hover {
+    color: #003E15;
+    background: #fff;
+    transition: 1s;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 2px;
+    transition: 0.3s;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    border-bottom: 5px solid #003E15;
+    padding: 2px;
+}
+
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-left: -30px;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 900px;
+    text-align: left;
+}
+
+.contenido .tituloBox h2 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contenido .tituloBox h2 span {
+    background: #019B45;
+    color: #fff;
+    padding: 0 10px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #019B45;
+    background: #fff;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover {
+    color: #fff;
+    background: #019B45;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox2 p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox3 p {
+    position: relative;
+    left: 60px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.contenido .imgBox img {
+    height: 85vh;
+}
+
+.contenido .imgBox img:hover {
+    height: 85vh;
+}
+
+.contenido imgBox2 {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.contenido .imgBox2 img {
+    height: 75vh;
+}
+
+.contenido .imgBox2 img:hover {
+    height: 75vh;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+}
+.copyright2 {
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0 3px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright2 p {
+    color: #fff;
+    text-align: center;
+    margin-left: 30px;
+}
+
+
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: #003E15;
+}
+
+.circulo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #019B45;
+    clip-path: circle(1000px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+.rectanguloIzq {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #019B45;
+    clip-path: polygon(0% 0, 53% 0%, 53% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+.yofoto {
+    width: 120%;
+    height: 100%;
+}
+
+form {
+    color: #fff;
+}
+
+h1,
+h3,
+h4,
+h5 {
+    color: #fff;
+}
+
+.derecha {
+    position: relative;
+    left: -140px;
+}
+.derecha2 {
+    position: relative;
+    left: -180px;
+}
+
+.descarga {
+    position: absolute;
+    bottom: 150px;
+    left: 880px;
+    margin-bottom: 20px;
+    padding: 0 20px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    font-size: x-large;
+    background: #019B45;
+    border-radius: 20px;
+}
+
+.descarga a {
+    color: #fff;
+}
+
+.proyectos{
+    text-decoration: none;
+}
+
+.proyectos2{
+    text-decoration: none;
+    position: relative;
+    left: -180px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <section>
+        <div class="rectanguloIzq"></div>
+        <header>
+            <a href="#" class="logo2">FORMULARIO DE CONTACTO</a>
+            <ul class="navbar">
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="soy.html">Quien soy</a></li>
+                <li><a href="CV.html">Curriculum Vitae</a></li>
+                <li><a href="proyectos.html">Proyectos Destacados</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="contenido">
+            <form action="mailto:algarsi2@hotmail.com" method="post" name="formularioContacto">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <br>
+                    Nombre: <input type="text" name="name" id="" placeholder="Indica tu nombre" required>
+                    <br>
+                    <br>
+                    Apellidos: <input type="text" name="apellidos" id="" placeholder="Indica tus apellidos" required>
+                    <br>
+                    <br>
+                    DNI:
+                    <input type="text" name="DNI" id="" placeholder="DNI">
+                    <br>
+                    <br>
+                    Fecha de nacimiento: <input type="date" name="" id="">
+                    <br>
+                    <br>
+                    Sexo: <input type="checkbox" name="Hombre" id="">Hombre <input type="checkbox" name="Mujer"
+                        id="">Mujer
+                    <br>
+                    <br>
+                    Teléfono:
+                    <input type="text" name="telf" id="" placeholder="Nº Teléfono" required>
+                    <br>
+                    <br>
+                    Correo Electrónico:
+                    <input type="text" name="email" id="" placeholder="Correo eléctronico" required>
+                    <br>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Dirección Postal</legend>
+                    <br>
+                    <input type="text" name="calle" id="" placeholder="Calle">
+                    <input type="text" name="Número" id="" placeholder="Número">
+                    <input type="text" name="Piso" id="" placeholder="Piso">
+                    <input type="text" name="ciudad" id="" placeholder="Ciudad">
+                    <br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros</legend>
+                    <br>
+                    Selecciona el motivo de contactar conmigo:
+                    <input list="desplegable">
+                    <datalist id="desplegable">
+                        <option value="Crear mi web"></option>
+                        <option value="Crear Aplicación Web"></option>
+                        <option value="Consultoría"></option>
+                    </datalist>
+                    <br>
+                    <br>
+                    Coméntame brevemente tus necesidades<br><textarea name="comentarios" id="" cols="90" rows="10"
+                        minlength="5" maxlength="25" placeholder="Escribe aqui lo que desees"></textarea>
+                    <br>
+                    <br>
+                    Borrar: <input type="reset" value="Eliminar los datos introducidos">
+                    <br>
+                    <br>
+                    Enviar: <input type="submit" value="Enviar formulario">
+                </fieldset>
+            </form>
+            <div class="imgBox2">
+                <img src="img/formulario.png" alt="">
+            </div>
+            <div class="copyright2">
+                <p><b>&copy;Desarrollador Alberto García</b></p>
+            </div>
+            <ul class="redesSociales">
+                <li><a href="mailto:algarsi2@hotmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/alberto-miguel-garcia-simo/"><ion-icon
+                            name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/algarciasi"><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+    </section>
+</body>
+
+</html>
