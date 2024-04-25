@@ -31,13 +31,13 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
+/*header .logo {
     color: #fff;
     font-size: 1.5em;
     text-decoration: none;
@@ -72,7 +72,7 @@ header .logo2:hover {
     color: #003E15;
     background: #fff;
     transition: 1s;
-}
+}*/
 
 header .navbar {
     position: relative;
@@ -106,7 +106,7 @@ header .navbar li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: left;
-    padding-left: -30px;
+    padding-left: -10px;
     flex-wrap: wrap;
 }
 
@@ -117,11 +117,18 @@ header .navbar li a:hover {
     flex-wrap: wrap;
 }
 
-.contenido .tituloBox h2 {
+/*.contenido .tituloBox h2 {
     font-size: 4.5em;
     text-transform: uppercase;
     color: #fff;
     flex-wrap: wrap;
+}*/
+.contenido .tituloBox h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #fff;
+    flex-wrap: wrap;
+
 }
 
 .contenido .tituloBox h2 span {
@@ -130,6 +137,8 @@ header .navbar li a:hover {
     padding: 0 10px;
     font-weight: 600;
     border-radius: 20px;
+    flex-wrap: wrap;
+    display: inline-block;
 }
 
 .contenido .tituloBox p {
@@ -150,6 +159,7 @@ header .navbar li a:hover {
     border-radius: 20px;
     letter-spacing: 2px;
     transition: 0.5s;
+    
 }
 
 .contenido .tituloBox a:hover {
@@ -159,14 +169,6 @@ header .navbar li a:hover {
 }
 
 .contenido .tituloBox2 p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.contenido .tituloBox3 p {
     position: relative;
     left: 60px;
     font-size: 1em;
@@ -174,6 +176,18 @@ header .navbar li a:hover {
     color: #fff;
     font-weight: 300;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contenido .tituloBox3 p {
+    position: relative;
+    left: -60px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .contenido imgBox {
@@ -185,18 +199,13 @@ header .navbar li a:hover {
     z-index: -5;
 }
 
-.contenido .imgBox img {
+.contenido .imgBox img .desarrollador{
     height: 85vh;
 }
 
-.contenido .imgBox img:hover {
+.contenido .imgBox img .desarrollador:hover {
     height: 85vh;
 
-}
-
-.contenido .imgBox .desarrollador{
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 .contenido imgBox2 {
@@ -216,36 +225,41 @@ header .navbar li a:hover {
     height: 75vh;
 }
 
-/*.contenido .imgBox2 .yo{
-    width: 60vh;
-    height: 75vh;
-    position: relative;
-    left: 0px;
-    display: block;
-}*/
-.contenido .imgBox2 .yo{
+.desarrollador{
     max-width: 100%;
-    margin: 0 auto;
-    display: block;
+    height: auto;
+    display: none;
 }
-.contenido .imgBox2 .formulario{
+
+.yo{
     max-width: 100%;
-    margin: 0 auto;
-    display: block;
+    height: auto;
+    display: none;
+}
+
+.formulario{
+    max-width: 100%;
+    height: auto;
+    display: none;
 }
 
 .contenido .tituloBox2 .frase2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: #003E15;
+    font-size: 20px;
+    line-height: 2.2;
+    color: #fff;
     position: relative;
-    left: -60px;
+    left: 10px;
+    justify-content:end;
+    flex-wrap: wrap;
 }
 .contenido .tituloBox2 .frase3{
     font-size: 16px;
+    position: relative;
+    left: 10px;
 }
 
-.copyright {
+/*.copyright {
     position: absolute;
     bottom: 0px;
     left: 800px;
@@ -277,7 +291,7 @@ header .navbar li a:hover {
     color: #fff;
     text-align: center;
     margin-left: 30px;
-}
+}*/
 
 
 .redesSociales {
@@ -295,6 +309,10 @@ header .navbar li a:hover {
 
 .redesSociales li {
     padding: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 .redesSociales li a {
@@ -316,6 +334,7 @@ header .navbar li a:hover {
     align-items: center;
     padding: 0 100px 30px;
     list-style: none;
+    color: #fff;
 }
 
 .redesSociales2 li {
@@ -329,6 +348,31 @@ header .navbar li a:hover {
 }
 
 .redesSociales2 li:hover a {
+    color: #019B45;
+}
+.redesSociales3 {
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+    color: #fff;
+}
+
+.redesSociales3 li {
+    padding: 10px;
+}
+
+.redesSociales3 li a {
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales3 li:hover a {
     color: #019B45;
 }
 
@@ -356,14 +400,10 @@ header .navbar li a:hover {
     z-index: -1000;
 }
 
-.yo {
+.formu{
     max-width: 100%;
-    margin: 0 auto;
-
-}
-
-form {
-    color: #fff;
+    height: auto;
+    display: block;
 }
 
 h1,
@@ -373,29 +413,33 @@ h5 {
     color: #fff;
     margin: 0px;
     padding: 10px;
+    
 }
 
 .derecha {
+    padding: 20px;
     position: relative;
-    left: -140px;
 }
 .derecha2 {
+    padding: 20px;
     position: relative;
-    left: -180px;
+
 }
 
 .descarga {
     position: absolute;
-    bottom: 150px;
-    left: 1080px;
+    bottom: -30px;
+    left: 10px;
     margin-bottom: 20px;
     padding: 0 20px 8px;
     display: flex;
     justify-content: center;
     align-items: left;
     font-size: x-large;
-    background: #019B45;
+    background: #003E15;
     border-radius: 20px;
+    flex-wrap: wrap;
+    
 }
 
 .descarga a {
@@ -409,7 +453,7 @@ h5 {
 .proyectos2{
     text-decoration: none;
     position: relative;
-    left: -180px;
+
 }
 
 @media screen and (min-width:576px) {
@@ -417,29 +461,53 @@ h5 {
     .contenido{
         display: flex;
     }
-    .logo{
-        display: none;
-    }
-    .yo{
-        max-width: 100%;
-        height: auto;
-        display: none;
-    }
-    .copyright{
+
+    .descarga{
         display: flex;
     }
-    .desarrollador{
+    
+   
+
+
+    .contenido .imgBox .desarrollador{
         max-width: 100%;
-        display: inline-flex;
+        margin: 0 auto;
+        display: block;
     }
-    .formulario{
+    
+    .contenido .imgBox2 .yo{
         max-width: 100%;
-        display: none;
-    }
-    .logo{
-        display: none;
+        margin: 0 auto;
+        display: block;
     }
 
-   
+    .contenido .imgBox2 .formulario{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .contenido .formu{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .contenido .tituloBox2 .frase2{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    /*.contenido .tituloBox h2{
+        font-size: calc(1em + 1vw);
+
+    }*/
+
+    .contenido .tituloBox h2 {
+        font-size: 4.5em;
+        text-transform: uppercase;
+        color: #fff;
+        flex-wrap: wrap;
+    }
+
 
 }
