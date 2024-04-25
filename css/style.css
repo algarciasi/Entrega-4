@@ -232,7 +232,7 @@ header .navbar li a:hover {
 }
 
 .yo{
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: none;
 }
@@ -241,6 +241,21 @@ header .navbar li a:hover {
     max-width: 100%;
     height: auto;
     display: none;
+}
+
+.f1{
+    background-color:lightseagreen;
+    color: black;
+}
+
+.f2{
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.f3{
+    background-color:lightseagreen;
+    color: black;
 }
 
 .contenido .tituloBox2 .frase2{
@@ -400,11 +415,8 @@ header .navbar li a:hover {
     z-index: -1000;
 }
 
-.formu{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
+
 
 h1,
 h3,
@@ -456,7 +468,7 @@ h5 {
 
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:992px) {
     
     .contenido{
         display: flex;
@@ -466,9 +478,6 @@ h5 {
         display: flex;
     }
     
-   
-
-
     .contenido .imgBox .desarrollador{
         max-width: 100%;
         margin: 0 auto;
@@ -509,5 +518,78 @@ h5 {
         flex-wrap: wrap;
     }
 
+
+
+
+}
+
+
+@media screen and (min-width:576px) {
+    
+    .contenido{
+        display: flex;
+    }
+
+    .descarga{
+        display: flex;
+    }
+    
+    .contenido .imgBox .desarrollador{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .contenido .imgBox2 .yo{
+        /*max-width: 100%;
+        margin: 0 auto;
+        display: block;*/
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contenido .imgBox2 .formulario{
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .contenido .formu{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .contenido .tituloBox2 .frase2{
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    /*.contenido .tituloBox h2{
+        font-size: calc(1em + 1vw);
+
+    }*/
+
+    .contenido .tituloBox h2 {
+        font-size: 4.5em;
+        text-transform: uppercase;
+        color: #fff;
+        flex-wrap: wrap;
+    }
+
+    .redesSociales{
+        position: absolute;
+        right: 210px;
+        bottom: -30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 250px 30px;
+        list-style: none;
+        flex-wrap: wrap;
+        color: #fff;
+    }
 
 }
