@@ -37,43 +37,6 @@ header {
     align-items: center;
 }
 
-/*header .logo {
-    color: #fff;
-    font-size: 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #019B45;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-weight: 600;
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-header .logo:hover {
-    color: #019B45;
-    background: #fff;
-    transition: 1s;
-}
-
-header .logo2 {
-    color: #fff;
-    font-size: 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #003E15;
-    border-radius: 5px;
-    padding: 0 10px;
-    font-weight: 600;
-}
-
-header .logo2:hover {
-    color: #003E15;
-    background: #fff;
-    transition: 1s;
-}*/
-
 header .navbar {
     position: relative;
     display: flex;
@@ -208,6 +171,13 @@ header .navbar li a:hover {
 
 }
 
+.contenido .imgBox .desarrollador{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .contenido imgBox2 {
     width: 600px;
     display: flex;
@@ -225,23 +195,26 @@ header .navbar li a:hover {
     height: 75vh;
 }
 
-.desarrollador{
-    max-width: 100%;
+
+
+.contenido .imgBox2 .yo{
+    /*max-width: 100%;
+    margin: 0 auto;
+    display: block;*/
+    max-width: 80%;
     height: auto;
-    display: none;
+    display: block;
+    margin: 0 auto;
 }
 
-.yo{
-    max-width: 50%;
+.contenido .imgBox2 .formulario{
+    max-width: 80%;
     height: auto;
-    display: none;
+    display: block;
+    margin: 0 auto;
 }
 
-.formulario{
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
+
 
 .f1{
     background-color:lightseagreen;
@@ -468,7 +441,7 @@ h5 {
 
 }
 
-@media screen and (min-width:992px) {
+@media screen and (max-width:992px) {
     
     .contenido{
         display: flex;
@@ -479,25 +452,20 @@ h5 {
     }
     
     .contenido .imgBox .desarrollador{
-        max-width: 100%;
-        margin: 0 auto;
-        display: block;
+        display: none;
     }
     
     .contenido .imgBox2 .yo{
-        max-width: 100%;
-        margin: 0 auto;
-        display: block;
+        display: none;
     }
 
-    .contenido .imgBox2 .formulario{
-        max-width: 100%;
-        margin: 0 auto;
-        display: block;
+    .formulario{
+        display: none;
     }
+    
     .contenido .formu{
         max-width: 100%;
-        margin: 0 auto;
+        height: auto;
         display: block;
     }
     
@@ -518,13 +486,10 @@ h5 {
         flex-wrap: wrap;
     }
 
-
-
-
 }
 
 
-@media screen and (min-width:576px) {
+@media screen and (max-width:575px) {
     
     .contenido{
         display: flex;
@@ -535,27 +500,17 @@ h5 {
     }
     
     .contenido .imgBox .desarrollador{
-        max-width: 100%;
-        margin: 0 auto;
         display: block;
     }
     
     .contenido .imgBox2 .yo{
-        /*max-width: 100%;
-        margin: 0 auto;
-        display: block;*/
-        max-width: 80%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        display: none;
     }
 
     .contenido .imgBox2 .formulario{
-        max-width: 80%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        display: none;
     }
+    
     .contenido .formu{
         max-width: 100%;
         height: auto;
@@ -591,5 +546,7 @@ h5 {
         flex-wrap: wrap;
         color: #fff;
     }
+
+    
 
 }
